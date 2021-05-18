@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #dbdcff, #babbd9);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-image: url(./light.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 2px solid #636373;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sec {
+  width: 3px;
+  height: 95px;
+  background: darkred;
+  transform-origin: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: visible;
+  border-radius: 100px 100px 0px 0px;
+  z-index: 3;
+  position: absolute;
+}
+
+.sub-sec {
+  width: 1px;
+  height: 115px;
+  background: darkred;
+}
+
+.min {
+  width: 4px;
+  height: 80px;
+  background: #636373;
+  transform-origin: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: visible;
+  border-radius: 100px 100px 0px 0px;
+  z-index: 4;
+  position: absolute;
+}
+
+.sub-min {
+  width: 1px;
+  height: 90px;
+  background: #636373;
+}
+
+.hr {
+  width: 6px;
+  height: 50px;
+  background: black;
+  transform-origin: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: visible;
+  border-radius: 100px 100px 0px 0px;
+  z-index: 5;
+  position: absolute;
+}
+
+.sub-hr {
+  width: 2px;
+  height: 60px;
+  background: black;
+  border-radius: 100px 100px 0px 0px;
+}
+
+.central-dot {
+  position: absolute;
+  z-index: 99;
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dark-mode {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  background: #636373;
+  height: 50px;
+  width: 100px;
+  border-radius: 50px;
+  display: flex;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  background: black;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  transform: translateX(0%);
+  z-index: 2;
+  position: absolute;
+}
+
+.btn-active {
+  width: 50px;
+  height: 50px;
+  background: black;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  transform: translateX(0%);
+  position: absolute;
+}
+
+.btn-active-active {
+  width: 50px;
+  height: 50px;
+  background: #008282;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  transform: translateX(100%);
+  position: absolute;
+}
